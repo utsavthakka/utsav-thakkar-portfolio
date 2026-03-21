@@ -4,40 +4,43 @@ const body = document.getElementById("modal-body");
 
 const projects = {
     raas: `
-        <h2>RAAS – Rewards as a Service</h2>
-        <p>Enterprise SaaS platform for reward management.</p>
+        <h2>RAAS – Employee Engagement Platform</h2>
+        <p>Enterprise SaaS powering flagship products like <strong>Cerra Applause</strong>, <strong>Cerra Flex</strong>, and <strong>Supr</strong> for global employee recognition and benefits.</p>
         <ul class="clean-list list-styled mt-4">
-            <li>20+ global clients</li>
-            <li>50K+ daily transactions</li>
-            <li>99.8% uptime</li>
-            <li>Tech: Python, Django, PostgreSQL, AWS, Docker</li>
+            <li><strong>Scale:</strong> Drives employee engagement for 20+ enterprise clients, processing 50K+ daily transactions.</li>
+            <li><strong>Architecture:</strong> Multi-tenant backend featuring robust RBAC and 99.8% uptime.</li>
+            <li><strong>Stack:</strong> Python, Django, PostgreSQL, Redis, Docker, AWS.</li>
+            <li><strong>Impact:</strong> Optimized APIs reduced latency by 35% across all core Rewardz products.</li>
         </ul>
     `,
     iot: `
-        <h2>RaychemRPG – IoT Automation</h2>
-        <p>Manufacturing automation using real-time IoT data.</p>
+        <h2>RaychemRPG – IIoT Automation</h2>
+        <p>Industrial IoT (IIoT) smart machine monitoring and manufacturing automation system.</p>
         <ul class="clean-list list-styled mt-4">
-            <li>40% defect reduction</li>
-            <li>50+ connected devices</li>
-            <li>MQTT-based real-time monitoring</li>
+            <li><strong>Capabilities:</strong> Manages 50+ industrial devices via advanced MQTT real-time data pipelines.</li>
+            <li><strong>Core Features:</strong> Live telemetry processing, automated equipment alerts, and predictive reporting.</li>
+            <li><strong>Stack:</strong> Python, Django, IoT protocols (MQTT), Time-Series Data.</li>
+            <li><strong>Impact:</strong> Achieved a 40% reduction in manufacturing defects through immediate data feedback loops.</li>
         </ul>
     `,
     energy: `
-        <h2>HikEMM – Energy Monitoring</h2>
-        <p>Energy consumption analytics platform.</p>
+        <h2>HikEMM – Smart Machine Monitoring</h2>
+        <p>High-load IIoT energy consumption and industrial analytics platform.</p>
         <ul class="clean-list list-styled mt-4">
-            <li>10K+ sensor data points/min</li>
-            <li>20–30% cost savings</li>
-            <li>Real-time dashboards</li>
+            <li><strong>Scale:</strong> Securely processes over 10K+ hardware sensor data points per minute.</li>
+            <li><strong>Architecture:</strong> Spearheaded asynchronous processing engines utilizing Celery & Redis.</li>
+            <li><strong>Stack:</strong> Python, Fast REST APIs, AWS, PostgreSQL, React (Frontend).</li>
+            <li><strong>Impact:</strong> Custom real-time dashboards directly led to 20–30% in measurable cost savings.</li>
         </ul>
     `,
     dating: `
-        <h2>Datesafe – Dating Platform</h2>
-        <p>AI-powered matchmaking application.</p>
+        <h2>DateSafe – AI Dating Platform</h2>
+        <p>AI-powered matchmaking and real-time social application designed for secure dating.</p>
         <ul class="clean-list list-styled mt-4">
-            <li>10K+ active users</li>
-            <li>Secure authentication</li>
-            <li>Real-time notifications</li>
+            <li><strong>Scale:</strong> Actively supports and securely matches over 10,000 users.</li>
+            <li><strong>Core Features:</strong> Engineered highly available low-latency real-time notification websockets and AI compatibility scoring.</li>
+            <li><strong>Security:</strong> strict JWT authentication and end-to-end data encryption.</li>
+            <li><strong>Stack:</strong> Python, Django REST, WebSockets, PostgreSQL.</li>
         </ul>
     `
 };
