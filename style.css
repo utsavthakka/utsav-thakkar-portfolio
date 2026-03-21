@@ -374,6 +374,7 @@ body {
 /* Flex utils */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
+.flex-1 { flex: 1; }
 .justify-center { justify-content: center; }
 .h-full { height: 100%; }
 
