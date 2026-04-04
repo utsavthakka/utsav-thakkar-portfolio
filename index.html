@@ -2,216 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Utsav Thakkar – Backend Python Engineer with 4+ years of experience in Django, REST APIs, AWS, IoT, and scalable backend systems.">
-    <title>Utsav Thakkar 👨‍💻 | Backend Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <meta name="description" content="Utsav Thakkar – Senior Backend Python Engineer & Architect specializing in scalable architectures, APIs, and cloud infrastructure.">
+    <meta name="author" content="Utsav Thakkar">
     
-    <!-- Linear-style typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- OPEN GRAPH (LinkedIn/Social Sharing) -->
+    <meta property="og:title" content="Utsav Thakkar | Senior Backend Architect">
+    <meta property="og:description" content="Senior Architecting & Scalable Backend Ecosystems. Portfolio of Utsav Thakkar.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsavthakkar.com">
+    <meta property="og:image" content="https://utsavthakkar.com/og-image.jpg"> <!-- Placeholder -->
+
+    <title>Utsav Thakkar | Senior Backend Architect</title>
+    
+    <!-- CUSTOM "UT" FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ff5733%22/><text y=%22.75em%22 x=%2250%%22 text-anchor=%22middle%22 font-family=%22Playfair Display, serif%22 font-weight=%22bold%22 font-size=%2260%22 fill=%22white%22>UT</text></svg>">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-theme="dark">
+<body>
 
-    <div class="ambient-glow"></div>
-
-    <!-- FLOATING DOCK NAV -->
-    <nav class="dock reveal">
-        <a href="#hero" class="dock-link active">Home</a>
-        <a href="#experience" class="dock-link">Experience</a>
-        <a href="#projects" class="dock-link">Work</a>
-        <a href="#skills" class="dock-link">Skills</a>
-        <a href="#contact" class="dock-link">Contact</a>
-        <div class="divider"></div>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-            <span class="icon-sun">☀️</span>
-            <span class="icon-moon">🌙</span>
-        </button>
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="logo">UTSAV THAKKAR</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">HOME</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        
     </nav>
+
+    <!-- MOBILE NAV OVERLAY (Moved outside nav to prevent height constraints) -->
+    <button class="mobile-toggle" style="display: none;">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+    </button>
+
+    <!-- MOBILE NAV OVERLAY (Moved outside nav to prevent height constraints) -->
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
 
     <main class="container">
         
-        <!-- HERO -->
-        <section id="hero" class="section hero reveal">
-            <div class="badge">Backend Python Engineer</div>
-            <h1 class="hero-title">Utsav <span>Thakkar</span></h1>
-            <p class="hero-subtitle">Building highly scalable backend systems, APIs, and robust cloud infrastructure.</p>
-            <div class="hero-cta">
-                <a href="Utsav_Thakkar_Resume.pdf" download class="btn btn-primary">Download Resume</a>
-                <a href="Utsav_Thakkar_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">View Resume</a>
-            </div>
-            
-            <div class="grid-2 mt-20">
-                <div class="card p-lg">
-                    <h3 class="card-title">Professional Summary</h3>
-                    <p class="text-muted mt-4">Results-driven <strong>Backend Python Engineer</strong> with <strong>4+ years</strong> of proven experience crafting systems using <strong>Python & Django</strong>.</p>
-                    <p class="text-muted mt-2">Expertise in RESTful APIs, IoT integration, cloud deployment, and managing <strong>5+ concurrent live projects</strong> seamlessly.</p>
-                </div>
-                <!-- CONTACT OVERVIEW IN HERO -->
-                <div id="contact" class="card p-lg">
-                    <h3 class="card-title">Connect & Relocate</h3>
-                    <ul class="clean-list text-muted mt-4">
-                        <li class="mb-2">📍 Ahmedabad, India</li>
-                        <li class="mb-2">🌍 Open to: <strong>Dubai, UAE & New Zealand</strong></li>
-                        <li class="mb-2">📧 thakkarutsav.1607@gmail.com</li>
-                        <li class="mb-2">📱 +91-7486986448</li>
-                        <li class="mt-4 pt-2">
-                            <a href="https://www.linkedin.com/in/utsav-thakkar-0679b8180/" target="_blank" class="link-primary">→ Connect on LinkedIn</a>
-                        </li>
-                    </ul>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero reveal">
+            <span class="hero-badge reveal" style="transition-delay: 0.1s;">AVAILABILITY: DUBAI, UAE & NEW ZEALAND</span>
+            <h1 class="hero-title reveal" style="transition-delay: 0.2s;">
+                Architecting Scalable<br>Digital <span>Ecosystems.</span>
+            </h1>
+            <p class="hero-lead reveal" style="transition-delay: 0.3s;">
+                Results-driven <strong>Senior Backend Architect</strong> with 4+ years of experience building high-performance systems for global enterprise clients.
+            </p>
+            <div class="hero-cta reveal" style="transition-delay: 0.4s;">
+                    <a href="resume.html" class="btn btn-primary">VIEW ATS RESUME</a>
+                    <a href="#experience" class="btn btn-outline">EXPLORE JOURNEY ↓</a>
                 </div>
             </div>
         </section>
 
-        <!-- EXPERIENCE -->
-        <section id="experience" class="section reveal">
-            <div class="section-header">
-                <h2>Experience</h2>
-                <p>A timeline of crafting robust software and managing live production systems.</p>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <div class="section-header reveal">
+                <span class="section-tag">Vertical Journey</span>
+                <h2 class="section-title serif">Professional Experience</h2>
+                <p class="text-secondary">A timeline of architectural excellence and managing high-load production systems.</p>
             </div>
-            
+
             <div class="timeline">
-                <div class="timeline-item card">
-                    <div class="timeline-header">
+                <div class="experience-card reveal">
+                    <div class="experience-meta">
                         <div>
-                            <h3>Associate Backend Developer</h3>
-                            <div class="company mt-1">Rewardz (Singapore)</div>
+                            <h3 class="exp-role">Associate Backend Developer</h3>
+                            <span class="exp-company">Rewardz · Singapore</span>
                         </div>
-                        <span class="badge badge-subtle">June 2024 – Present</span>
+                        <span class="exp-date">Jun 2024 – Present</span>
                     </div>
-                    <ul class="text-muted list-styled mt-4">
-                        <li>Architected RAAS backend serving robust global enterprise clients.</li>
-                        <li>Seamlessly integrated 10+ crucial third-party APIs.</li>
-                        <li>Ensured smooth processing of 50K+ daily transactions.</li>
-                        <li>Engineered improvements raising overall API performance by 35%.</li>
+                    <ul class="exp-list">
+                        <li>Architected RAAS backend serving robust global enterprise clients with zero downtime.</li>
+                        <li>Seamlessly integrated 10+ crucial third-party APIs for extended functionality.</li>
+                        <li>Ensured smooth processing of 50K+ daily transactions across distributed clusters.</li>
+                        <li>Engineered performance improvements raising overall API responsiveness by 35%.</li>
                     </ul>
                 </div>
 
-                <div class="timeline-item card">
-                    <div class="timeline-header">
+                <div class="experience-card reveal">
+                    <div class="experience-meta">
                         <div>
-                            <h3>Software Developer</h3>
-                            <div class="company mt-1">SrashtaSoft (India)</div>
+                            <h3 class="exp-role">Software Developer</h3>
+                            <span class="exp-company">SrashtaSoft · India</span>
                         </div>
-                        <span class="badge badge-subtle">Oct 2021 – Feb 2024</span>
+                        <span class="exp-date">Oct 2021 – Feb 2024</span>
                     </div>
-                    <ul class="text-muted list-styled mt-4">
-                        <li>Managed 5+ live production systems concurrently while maintaining zero critical downtime.</li>
-                        <li>Pioneered IoT automation & scalable SaaS platforms.</li>
-                        <li>Securely processed and mediated $500K+ annual revenue flows.</li>
-                        <li>Integrated Stripe & Razorpay workflows flawlessly.</li>
+                    <ul class="exp-list">
+                        <li>Managed 5+ live production systems concurrently while maintaining high system integrity.</li>
+                        <li>Pioneered IoT automation systems and scalable SaaS platforms for industrial use.</li>
+                        <li>Securely processed and mediated $500K+ annual revenue flows through custom logic.</li>
+                        <li>Integrated Stripe & Razorpay workflows flawlessly for global subscription models.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section id="projects" class="section reveal">
-            <div class="section-header">
-                <h2>Featured Work</h2>
-                <p>A selection of major enterprise systems and platforms.</p>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div class="section-header reveal">
+                <span class="section-tag">The Build</span>
+                <h2 class="section-title serif">Featured Systems</h2>
+                <p class="text-secondary">Core enterprise platforms and industrial automation solutions.</p>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card reveal">
+                    <span class="project-number">01</span>
+                    <div class="project-content">
+                        <span class="section-tag">Enterprise SaaS</span>
+                        <h3 class="serif">RAAS Platform</h3>
+                        <p>A flagship rewards platform serving global clients with complex transaction logic and multi-region deployment.</p>
+                        <div class="project-tech-tags">Python • Django • AWS</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">02</span>
+                    <div class="project-content">
+                        <span class="section-tag">IoT Automation</span>
+                        <h3 class="serif">RaychemRPG</h3>
+                        <p>Industrial scale manufacturing automation integrating MQTT protocols for real-time monitoring and workflow control.</p>
+                        <div class="project-tech-tags">Python • MQTT • Redis</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">03</span>
+                    <div class="project-content">
+                        <span class="section-tag">High-Load Monitoring</span>
+                        <h3 class="serif">HikEMM</h3>
+                        <p>Energy management system designed for heavy data throughput and proactive anomaly detection.</p>
+                        <div class="project-tech-tags">Django • PostgreSQL • Celery</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">04</span>
+                    <div class="project-content">
+                        <span class="section-tag">AI Matchmaking</span>
+                        <h3 class="serif">Datesafe</h3>
+                        <p>Backend architecture for an AI-powered matchmaking platform focusing on high security and user privacy.</p>
+                        <div class="project-tech-tags">FastAPI • OpenAI • JWT</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">05</span>
+                    <div class="project-content">
+                        <span class="section-tag">Geospatial MGMT</span>
+                        <h3 class="serif">PinYard</h3>
+                        <p>Property plot management system integrating Geoserver and PostGIS for precise mapping and subscription-based access.</p>
+                        <div class="project-tech-tags">PostGIS • Geoserver • Python</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">06</span>
+                    <div class="project-content">
+                        <span class="section-tag">Branding Backend</span>
+                        <h3 class="serif">BrandeManager</h3>
+                        <p>Social media branding solution for automated image frame generation and content management at scale.</p>
+                        <div class="project-tech-tags">Django • ImageMagick • APIs</div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <span class="project-number">07</span>
+                    <div class="project-content">
+                        <span class="section-tag">Smart Factory</span>
+                        <h3 class="serif">Digivigilance</h3>
+                        <p>Factory automation and counterfeit detection system with QR code-based tracking and real-time production analytics.</p>
+                        <div class="project-tech-tags">Linux • IoT • Python</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <div class="section-header reveal">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title serif">Core Expertise</h2>
             </div>
             
-            <div class="grid-2">
-                <div class="card project-card" onclick="openModal('raas')">
-                    <div class="project-icon text-main">✦</div>
-                    <h3 class="mb-2">RAAS Platform</h3>
-                    <p class="text-muted">Enterprise Rewards SaaS.</p>
-                    <span class="link-subtle mt-4">View Architecture →</span>
-                </div>
-
-                <div class="card project-card" onclick="openModal('iot')">
-                    <div class="project-icon text-main">⎈</div>
-                    <h3 class="mb-2">RaychemRPG</h3>
-                    <p class="text-muted">Manufacturing IoT Automation System.</p>
-                    <span class="link-subtle mt-4">View Architecture →</span>
-                </div>
-
-                <div class="card project-card" onclick="openModal('energy')">
-                    <div class="project-icon text-main">⚡</div>
-                    <h3 class="mb-2">HikEMM</h3>
-                    <p class="text-muted">High-Load Energy Monitoring.</p>
-                    <span class="link-subtle mt-4">View Architecture →</span>
-                </div>
-
-                <div class="card project-card" onclick="openModal('dating')">
-                    <div class="project-icon text-main">⚯</div>
-                    <h3 class="mb-2">Datesafe</h3>
-                    <p class="text-muted">AI-powered Matchmaking Platform.</p>
-                    <span class="link-subtle mt-4">View Architecture →</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS & COMPETENCIES -->
-        <section id="skills" class="section reveal">
-            <div class="section-header">
-                <h2>Skills & Expertise</h2>
-                <p>The tools and technologies driving my backend engineering.</p>
-            </div>
-
-            <div class="skills-container">
-                <div class="card p-lg mb-4">
-                    <h3 class="card-title mb-4">Core Languages & API</h3>
-                    <div class="tag-cloud">
-                        <span>Python (Expert)</span><span>Django</span><span>Django REST</span><span>MQTT Protocol</span>
-                        <span>RESTful APIs</span><span>JWT Auth</span><span>Rate Limiting</span>
+            <div class="bento-grid">
+                <!-- PRIMARY: LANGUAGES & API -->
+                <div class="skill-category reveal bento-high">
+                    <div class="skill-category-header">
+                        <span class="category-icon">⚡</span>
+                        <h3>Core Stack & API</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python (Expert)</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Django REST</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">JWT</span>
                     </div>
                 </div>
 
-                <div class="grid-2 mb-4">
-                    <div class="card p-lg">
-                        <h3 class="card-title mb-4">Databases & Architecture</h3>
-                        <div class="tag-cloud">
-                            <span>PostgreSQL</span><span>MySQL</span><span>SQLAlchemy</span>
-                            <span>Optimization</span><span>Indexing</span><span>Connection Pooling</span>
-                        </div>
+                <!-- SECONDARY: ASYNC & REAL-TIME -->
+                <div class="skill-category reveal bento-wide">
+                    <div class="skill-category-header">
+                        <span class="category-icon">🔄</span>
+                        <h3>Distributed Systems</h3>
                     </div>
-
-                    <div class="card p-lg">
-                        <h3 class="card-title mb-4">Cloud & DevOps</h3>
-                        <div class="tag-cloud">
-                            <span>AWS (EC2, RDS, S3, Lambda)</span><span>Docker</span><span>Linux</span>
-                            <span>CI/CD</span><span>Git</span>
-                        </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">MQTT Protocol</span>
+                        <span class="skill-tag">IoT Integration</span>
+                        <span class="skill-tag">Image Processing</span>
+                        <span class="skill-tag">Real-time Analytics</span>
                     </div>
                 </div>
 
-                <div class="card p-lg border-accent">
-                    <h3 class="card-title mb-4">Async & Workflow Competencies</h3>
-                    <div class="tag-cloud">
-                        <span>Stripe & Razorpay Integrations</span><span>Real-time Data Processing</span>
-                        <span>Redis</span><span>Celery</span><span>Twilio</span><span>Continuous Integration</span>
+                <!-- TERTIARY: DATABASES & ARCHITECTURE -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <span class="category-icon">🏗️</span>
+                        <h3>Data & Geospatial</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">PostGIS</span>
+                        <span class="skill-tag">Geoserver</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">System Design</span>
+                        <span class="skill-tag">Geospatial Engineering</span>
+                    </div>
+                </div>
+
+                <!-- QUATERNARY: DEV OPS -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <span class="category-icon">🚀</span>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">AWS (EC2, S3, RDS)</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git / CI/CD</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- EDUCATION & AWARDS -->
-        <section id="education" class="section reveal">
-            <div class="grid-2">
-                <div>
-                    <h2 class="mb-4">Education</h2>
-                    <div class="card mb-4 p-md">
-                        <h4 class="text-main mb-1">M.Tech – Computer Engineering</h4>
-                        <p class="text-muted text-sm mb-2">CHARUSAT – Anand</p>
-                        <span class="badge badge-subtle">Graduated: May 2025</span>
+        <!-- ACCOLADES SECTION -->
+        <section id="accolades" class="reveal">
+            <div class="accolades-box">
+                <span class="section-tag">Recognition</span>
+                <h2 class="award-title serif">Best Supportive Team Member</h2>
+                <p class="text-secondary" style="max-width: 800px; margin: 0 auto;">Awarded by <strong>Hikar (2023)</strong> for demonstrating exceptional cross-functional leadership, outstanding responsiveness, and deep commitment to the success of every project.</p>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education">
+            <div class="section-header reveal">
+                <span class="section-tag">Foundations</span>
+                <h2 class="section-title serif">Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="experience-card reveal">
+                    <div class="experience-meta">
+                        <div>
+                            <h3 class="exp-role">M.Tech · Computer Engineering</h3>
+                            <span class="exp-company">CHARUSAT · Anand</span>
+                        </div>
+                        <span class="exp-date">2023 – 2025</span>
                     </div>
-                    <div class="card p-md">
-                        <h4 class="text-main mb-1">B.E – Information Technology</h4>
-                        <p class="text-muted text-sm mb-2">Ganpat University – Mehsana</p>
-                        <span class="badge badge-subtle">Graduated: May 2022</span>
+                </div>
+                <div class="experience-card reveal">
+                    <div class="experience-meta">
+                        <div>
+                            <h3 class="exp-role">B.E · Information Technology</h3>
+                            <span class="exp-company">Ganpat University · Mehsana</span>
+                        </div>
+                        <span class="exp-date">2018 – 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Connectivity</span>
+                    <h2 class="section-title serif">Let's Architect Together.</h2>
+                    <p class="text-secondary mb-8">Currently based in <strong>Ahmedabad, India</strong>. I am proactively seeking opportunities to build scalable systems in high-growth environments.</p>
+                    
+                    <div class="relocation-card">
+                        <span class="accent-text">READY TO RELOCATE</span>
+                        <div class="relocation-locations">
+                            <span class="location-tag">DUBAI, UAE</span>
+                            <span class="location-tag">NEW ZEALAND</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="h-full flex flex-col">
-                    <h2 class="mb-4">Accolades</h2>
-                    <div class="card p-lg border-accent flex-1 flex flex-col justify-center">
-                        <h3 class="text-main mb-2">Best Supportive Team Member</h3>
-                        <p class="text-muted">Awarded by <strong>Hikar (2023)</strong> for demonstrating exceptional cross-functional leadership, outstanding responsiveness, and deep commitment to project success.</p>
-                    </div>
+                <div class="contact-links reveal">
+                    <a href="mailto:thakkarutsav.1607@gmail.com" class="contact-card">
+                        <span class="card-label">EMAIL</span>
+                        <span class="card-value">thakkarutsav.1607@gmail.com</span>
+                    </a>
+                    <a href="tel:+917486986448" class="contact-card">
+                        <span class="card-label">PHONE</span>
+                        <span class="card-value">+91-7486986448</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/utsav-thakkar-0679b8180/" target="_blank" class="contact-card">
+                        <span class="card-label">LINKEDIN</span>
+                        <span class="card-value">Connect on LinkedIn →</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -219,16 +339,10 @@
     </main>
 
     <footer>
-        <p class="text-muted text-sm">© 2026 Utsav Thakkar. Engineered with precision.</p>
-    </footer>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal">
-        <div class="modal-content card">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div id="modal-body"></div>
+        <div class="container">
+            <p class="footer-text">© 2026 UTSAV THAKKAR. ENGINEERED WITH PRECISION.</p>
         </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
